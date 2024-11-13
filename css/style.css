@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#div_container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+
+    #main-grid{
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr,0.5fr;
+        grid-template-rows: repeat(4, auto);
+
+        #banner-bilde{
+            background-image: url(../bilder/header1.jpg);
+            border-radius: 30px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 430px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-size: 40px;
+                padding-left: 630px;
+                padding-right: 30px;
+            }
+            p{
+                padding-left: 650px;
+                padding-right: 30px;
+            }
+
+        }
+        
+        #top-choice-nav{
+    
+        }
+    }
+    footer{
+        
+    }
+a{
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+}
+#global_header{
+    top: 1rem;
+    position: relative;
+    
+    .flex_header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        form {
+            padding:1rem;
+            background-color: #ffff;
+            border-radius: 30px;
+            border: 1px #000;
+            border-style: solid;
+            
+            input{
+                border: none;
+                
+            }
+            .icon{
+                outline: none;
+                border: none;
+                size: 4px;
+            }
+        }
+
+        span{
+            font-weight: bold;
+            font-size: 35px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            h1,p{
+                padding-left: 500px;
+
+            }
+        }
+        
+        .flex-nav{
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 1rem;
+
+            li{
+                display: flex;
+                align-items: center;
+            
+        }
+
+    }
+}
+    
+}
+#logo{
+
+}
