@@ -15,6 +15,7 @@ body{
     font-size: 35px;
     padding-left: 1rem;
     padding-right: 1rem;
+    text-decoration: none;
     h1,p{
         padding-left: 500px;
 
@@ -70,6 +71,13 @@ body{
                 align-items: center;
                 padding:0;
 
+                li:hover{
+                    background-color: #646464;
+                    a{
+                    color: #ffff;
+                    }
+                }
+
                li{
                 border-radius: 30px;
                 width: 135px;
@@ -92,6 +100,11 @@ body{
         padding-top: 2rem;
         border-top: solid;
         border-width: 0.5px;
+
+        .logo{
+            padding:0;
+            font-weight: normal;
+        }
 
         span{
             padding: 0;
@@ -201,6 +214,10 @@ a{
             flex-wrap: wrap;
             list-style: none;
             gap: 1rem;
+
+            .hover:hover{
+                text-decoration: underline;
+            }
 
             li{
                 display: flex;
