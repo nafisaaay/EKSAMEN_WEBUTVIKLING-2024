@@ -34,12 +34,74 @@ body{
         grid-template-rows: repeat(4, auto);
         padding-bottom: 5rem;
 
+        #banner{
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            max-width: 1200px;
+            min-height: 480px;
+            button{
+                width: 100px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                text-transform: uppercase;
+                border-radius: 30px;
+                align-items: center;
+                align-self: flex-end;
+                border-color: transparent;
+
+            }
+
+            #aside1{
+                background-image: url(../bilder/header2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                min-width: 1200px;
+                min-height: 480px;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 30px;
+                h2{
+                    font-size: 40px;
+                    padding-left: 630px;
+                    padding-right: 30px;
+                }
+                p{
+                    padding-left: 650px;
+                    padding-right: 30px;
+                }
+            }
+            #aside2{
+                background-image: url(../bilder/header3.jpg);
+                background-repeat: no-repeat;
+                min-width: 1200px;
+                min-height: 480px;
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 30px;
+                h2{
+                    font-size: 40px;
+                    padding-left: 630px;
+                    padding-right: 30px;
+                }
+                p{
+                    padding-left: 650px;
+                    padding-right: 30px;
+                }
+        }
+
         #banner-bilde{
             background-image: url(../bilder/header1.jpg);
             border-radius: 30px;
-            background-size: 100% 100%;
+            background-size: cover;
             background-repeat: no-repeat;
-            height: 430px;
+            min-width: 1200px;
+            min-height: 490px;
             text-align: right;
             display: flex;
             flex-direction: column;
@@ -55,6 +117,7 @@ body{
             }
 
         }
+    }
         
         #top-choice-nav{
             display: flex;
@@ -93,6 +156,8 @@ body{
             }
         }
     }
+}
+
     footer{
         display: flex;
         flex-direction: column;
@@ -173,7 +238,7 @@ body{
         
         }
     }
-}
+
 a{
     color: #000;
     text-decoration: none;
@@ -245,7 +310,7 @@ a{
 } 
 #category{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4,auto);
     gap: 1rem;
     padding-bottom: 2rem;
