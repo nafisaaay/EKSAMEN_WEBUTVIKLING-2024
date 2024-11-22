@@ -52,14 +52,14 @@
             <section id="product-view">
                     <img id="main-product" src="bilder/shoes.jpg" alt="Shoes">
                     <div id="side-product">
-                    <img src="bilder/shoes.jpg" alt="Shoes">
-                    <img src="bilder/shoes.jpg" alt="Shoes">
-                    <img src="bilder/shoes.jpg" alt="Shoes">
+                        <img src="bilder/shoes.jpg" alt="Shoes">
+                        <img src="bilder/shoes.jpg" alt="Shoes">
+                        <img src="bilder/shoes.jpg" alt="Shoes">
                     </div>
             </section>
             <section id="product-choose">
                 <h1>Produktnavn</h1>
-                <a href="#">Merke</a>
+                <a href="#">Merkekavn</a>
                 <h4>5 195kr inkl. mva</h4>
                 <h4>farge:hvit</h4>
                 <form id="choose-size">
@@ -71,12 +71,12 @@
                         <option value="Large">L</option>
                     </select>
                 </form>                
-                <form>
-                    <input type="submit" name="legg til" id="Add">
+                <form id="add-to-chart">
+                    <input type="submit" name="legg til" value="Legg til i handlekurv" id="Add">
+                    <span id="wish-heart">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
                 </form>
-                <span id="wish-heart">
-                <i class="fa-regular fa-heart"></i>
-                </span>
                 <div id="flex-product">
                 <section class="flex-space">
                     <h3>Materiale og vedlinkenhold</h3>
@@ -102,7 +102,9 @@
                 </section>
                 </div>
             </section>
-            <aside id="product-aside">
+            <aside id="flex-aside">
+                <h3>Lignende produkter</h3>
+                <div id="product-aside">
                 <article class="product-aside">
                     <picture>
                     <img src="https://picsum.photos/300/300" alt="#">
@@ -199,6 +201,7 @@
                     <span class="fa-regular fa-star"></span>
                     <span class="fa-regular fa-star"></span>
                 </article>
+                </div>
             </aside>
         </main>
         <footer>
