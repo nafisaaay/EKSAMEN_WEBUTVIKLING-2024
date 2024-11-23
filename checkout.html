@@ -47,12 +47,129 @@
             <h1>Kasse</h1>
             <section id="shopping-bag">
                 <h2>1.shoppingbagen din</h2>
+                <article class="checkout-product">
+                    <figure>
+                    <img src="bilder/shoes.jpg" alt="hvite høy heler">
+                    </figure>
+                    <section>
+                    <a href="product.html">
+                        <h5>product name
+                        </h5>
+                    </a>
+                    <p>kr 1999</p>
+                    <p>farge: hvit</p>
+                    <form>
+                        <p>Størrelse</p>
+                        <select class="sizes" name="size">
+                            <option value="exstra small">XS</option>
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                        </select>
+                        <label for="antall" class="antall">
+                            <p>Antall</p>
+                            <input type="number" id="number" placeholder="0" min="1" max="10" required>
+                        </label>
+                    </form>
+                    </section>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </article>
+                <article class="checkout-product">
+                    <figure>
+                    <img src="bilder/shoes.jpg" alt="hvite høy heler">
+                    </figure>
+                    <section>
+                    <a href="product.html">
+                        <h5>product name
+                        </h5>
+                    </a>
+                    <p>kr 1999</p>
+                    <p>farge: hvit</p>
+                    <form>
+                        <p>Størrelse</p>
+                        <select class="sizes" name="size">
+                            <option value="exstra small">XS</option>
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                        </select>
+
+                        <label for="antall" class="antall">
+                            <p>Antall</p>
+                            <input type="number" id="number" placeholder="0" min="1" max="10" required>
+                        </label>
+                    </form>
+                    </section>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </article>
+                <article class="checkout-product">
+                    <figure>
+                    <img src="bilder/shoes.jpg" alt="hvite høy heler">
+                    </figure>
+                    <section>
+                    <a href="product.html">
+                        <h5>product name
+                        </h5>
+                    </a>
+                    <p>kr 1999</p>
+                    <p>farge: hvit</p>
+                    <form>
+                        <p>Størrelse</p>
+                        <select class="sizes" name="size">
+                            <option value="exstra small">XS</option>
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                        </select>
+                        <label for="antall" class="antall">
+                            <p>Antall</p>
+                            <input type="number" id="number" placeholder="0" min="1" max="10" required>
+                        </label>
+                    </form>
+                    </section>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </article>
             </section>
             <section id="information">
                 <h2>2.dine opplysninger</h2>
+                <form method="post">
+                    <h4>Leveringsadresse</h4>
+                    <label for="name">
+                        <h5>Fornavn</h5>
+                        <input type="text" name="fornavn" id="fornavn" placeholder="Nora*" maxlength="15" required>
+                        <h5>Etternavn</h5>
+                        <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann*" maxlength="15" required>
+                    </label>
+                    <label for="adresse">
+                        <h5>Gatenavn</h5>
+                        <input type="text" name="Gatenavn" id="Gatenavn" placeholder="BRA veien 4" required>
+                        <h5>Postnummer</h5>
+                        <input type="number" name="Postnummer" id="Postnummer" placeholder="1725*" maxlength="4" minlength="4" pattern="\d{4}" required>
+                        <h5>Poststed</h5>
+                        <input type="text" name="Poststed" id="Poststed" placeholder="Halden*" required>
+                    </label>
+                </form>
+                <form method="post">
+                    <h4>Kontaktinformasjon</h4>
+                    <label for="Kontakt">
+                        <h4>E-post</h4>
+                        <input type="email" name="email" placeholder="nora-nordmann@hiof.no*" pattern="[a-z0-9._%+\-]+@hiof.no" required>
+                        <h4>Telefon</h4>
+                        <input type="tel" name="Telefon" id="Telefon" placeholder="+47*****123" required>
+                    </label>
+                </form>
             </section>
             <section id="delivery">
-                <h2>3.Levering</h2>
+                <h2>3.levering</h2>
             </section>
             <section id="payment">
                 <h2>4.betaling</h2>
