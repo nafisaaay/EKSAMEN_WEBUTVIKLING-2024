@@ -32,10 +32,11 @@ body{
     flex-direction: row;
     margin:1rem;
     margin-left: 0;
-    h6{
+    span{
         margin:0;
         align-content: center;
         margin-left: 0.5rem;
+        font-weight:bold;
     }
 }
 
