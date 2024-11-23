@@ -53,8 +53,7 @@
                     </figure>
                     <section>
                     <a href="product.html">
-                        <h5>product name
-                        </h5>
+                        <h5>product name</h5>
                     </a>
                     <p>kr 1999</p>
                     <p>farge: hvit</p>
@@ -66,9 +65,9 @@
                             <option value="Medium">M</option>
                             <option value="Large">L</option>
                         </select>
-                        <label for="antall" class="antall">
-                            <p>Antall</p>
-                            <input type="number" id="number" placeholder="0" min="1" max="10" required>
+                        <label class="ammount">
+                            <span>Antall</span>
+                            <input type="number" placeholder="0" min="1" max="10" required>
                         </label>
                     </form>
                     </section>
@@ -96,10 +95,9 @@
                             <option value="Medium">M</option>
                             <option value="Large">L</option>
                         </select>
-
-                        <label for="antall" class="antall">
-                            <p>Antall</p>
-                            <input type="number" id="number" placeholder="0" min="1" max="10" required>
+                        <label class="ammount">
+                            <span>Antall</span>
+                            <input type="number" placeholder="0" min="1" max="10" required>
                         </label>
                     </form>
                     </section>
@@ -127,9 +125,9 @@
                             <option value="Medium">M</option>
                             <option value="Large">L</option>
                         </select>
-                        <label for="antall" class="antall">
-                            <p>Antall</p>
-                            <input type="number" id="number" placeholder="0" min="1" max="10" required>
+                        <label class="ammount">
+                            <span>Antall</span>
+                            <input type="number" placeholder="0" min="1" max="10" required>
                         </label>
                     </form>
                     </section>
@@ -143,29 +141,43 @@
                 <h2>2.dine opplysninger</h2>
                 <form method="post">
                     <h4>Leveringsadresse</h4>
-                    <label for="name">
-                        <h5>Fornavn</h5>
+                    <label>
+                        <span>Fornavn</span>
                         <input type="text" name="fornavn" id="fornavn" placeholder="Nora*" maxlength="15" required>
-                        <h5>Etternavn</h5>
+                    </label>
+                    <label>
+                        <span>Etternavn</span>
                         <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann*" maxlength="15" required>
                     </label>
-                    <label for="adresse">
-                        <h5>Gatenavn</h5>
+                    <label>
+                        <span>Gatenavn</span>
                         <input type="text" name="Gatenavn" id="Gatenavn" placeholder="BRA veien 4" required>
-                        <h5>Postnummer</h5>
-                        <input type="number" name="Postnummer" id="Postnummer" placeholder="1725*" maxlength="4" minlength="4" pattern="\d{4}" required>
-                        <h5>Poststed</h5>
+                    </label>
+                    <label>
+                        <span>Postnummer</span>
+                        <input type="number" name="Postnummer" id="Postnummer" placeholder="1725*" min="0001" max="9991" required>
+                    </label>
+                    <label>
+                        <span>Poststed</span>
                         <input type="text" name="Poststed" id="Poststed" placeholder="Halden*" required>
                     </label>
                 </form>
                 <form method="post">
                     <h4>Kontaktinformasjon</h4>
-                    <label for="Kontakt">
-                        <h4>E-post</h4>
+                    <label>
+                        <span>E-post</span>
                         <input type="email" name="email" placeholder="nora-nordmann@hiof.no*" pattern="[a-z0-9._%+\-]+@hiof.no" required>
-                        <h4>Telefon</h4>
+                        <span>Telefon</span>
+                    </label>
+                    <label>
                         <input type="tel" name="Telefon" id="Telefon" placeholder="+47*****123" required>
                     </label>
+                </form>
+                <form method="post" id="send">
+                    <label>
+                        <input type="submit" name="lagre" id="lagre" value="Lagre">
+                    </label>
+                    <a href="product.html" id="avbryt">Avbryt</a>
                 </form>
             </section>
             <section id="delivery">
