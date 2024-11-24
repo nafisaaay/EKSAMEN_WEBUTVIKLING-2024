@@ -147,6 +147,22 @@ body{
                 margin-right: 30px;
                 align-self: flex-end;
             }
+            #arrows{
+                display: flex;
+                align-content: center;
+                flex-direction: row;
+                justify-content: space-between;
+
+                i{
+                background-color: #b8b8b88d;
+                border-radius: 50px;
+                border-width: 1px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                padding-top: 11px;
+                }
+            }
 
         }
     }
@@ -334,16 +350,20 @@ a{
 
 #product-card{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
     padding-bottom: 2rem;
+
+    article{
+        flex-basis: 30%;
+        min-width: 150px;
+        flex-grow: 1;
+    }
 
     img{
         border-radius: 30px;
-        width: 380px;
-        height: 380px;
+        width: 100%;
+        max-height: 380px;
     }
 } 
 #category{
