@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="div_container">
-        <header id="global_header">
+        <header class="global_header">
             <nav class="flex_header">
                 <form>
                     <label for="search"></label>
@@ -30,10 +30,10 @@
                     <li class="hover"><a href="#category">Kategorier</a></li>
                     <li class="hover"><a href="#contact">Kontakt oss</a></li>
                 </ul>
-                <ul class="flex-nav">
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <ul class="flex-icons">
+                    <li class="ikoner"><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li class="ikoner"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li class="ikoner"><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -184,23 +184,39 @@
                 <h2>3.levering</h2>
                 <section>
                     <h3>leveringsvalg</h3>
-                    <section>
-                        <h5>express hjemmelevering</h5>
-                        <i class="fa-solid fa-truck-fast">59kr</i>
-                        <p>3-4 Vikredager</p>
-                    <p>Bestill hver dag før 08.00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag.*for levering til postnummer 4000-799 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager</p>
-                    </section>
-                    <section>
-                        <h5>Ekspress pakke utleveringssted</h5>
-                        <i class="fa-brands fa-dhl">59kr</i>
-                        <p>1-3 virkedager</p>
-                    </section>
-                    <section>
-                        <h5>Standard hjemmelevering</h5>
-                        <i class="fa-solid fa-box">gratis</i>
-                        <p>5-8 virkedager</p>
-                        <p>Leveres hjem til deg før frokost mandag-lørdag innen 4-7 hverdager</p>
-                    </section>
+                    <form method="post">
+                        <section id="delivery-option1">
+                            <label>
+                                <input type="radio" name="valg" value="ekspress-hjemlevering">
+                                Ekspress hjemlevering
+                            </label>
+                            <i class="fa-solid fa-truck-fast">59kr</i>
+                            <p>3-4 virkedager</p>
+                            <p>Bestill hver dag før 08.00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag.
+                                *for levering til postnummer 4000-799 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+                            </p>
+                        </section>
+                    
+                        <section id="delivery-option2">
+                            <label>
+                                <input type="radio" name="valg" value="ekspress-pakke-utleveringssted">
+                                Ekspress pakke utleveringssted
+                            </label>
+                            <i class="fa-brands fa-dhl">59kr</i>
+                            <p>1-3 virkedager</p>
+                        </section>
+                    
+                        <section id="delivery-option3">
+                            <label>
+                                <input type="radio" name="valg" value="standard-hjemmelevering">
+                                Standard hjemmelevering
+                            </label>
+                            <i class="fa-solid fa-box">gratis</i>
+                            <p>5-8 virkedager</p>
+                            <p>Leveres hjem til deg før frokost mandag-lørdag innen 4-7 hverdager.</p>
+                        </section>
+                    </form>
+                    
                 </section>
             </section>
             <section id="payment">
