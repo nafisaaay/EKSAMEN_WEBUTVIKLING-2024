@@ -139,37 +139,37 @@
             </section>
             <section id="information">
                 <h2>2.dine opplysninger</h2>
-                <form method="post">
+                <form method="post" id="information-grid">
                     <h4>Leveringsadresse</h4>
-                    <label for="fornavn">
+                    <label id="fornavn">
                         <span>Fornavn</span>
-                        <input type="text" name="fornavn" id="fornavn" placeholder="Nora*" maxlength="15" required>
+                        <input type="text" name="fornavn" placeholder="Nora*" maxlength="15" required>
                     </label>
-                    <label for="etternavn">
+                    <label id="etternavn">
                         <span>Etternavn</span>
-                        <input type="text" name="etternavn" id="etternavn" placeholder="Nordmann*" maxlength="15" required>
+                        <input type="text" name="etternavn" placeholder="Nordmann*" maxlength="15" required>
                     </label>
-                    <label>
+                    <label id="gatenavn">
                         <span>Gatenavn</span>
-                        <input type="text" name="Gatenavn" id="Gatenavn" placeholder="BRA veien 4" required>
+                        <input type="text" name="Gatenavn" placeholder="BRA veien 4" required>
                     </label>
-                    <label>
+                    <label id="postnummer">
                         <span>Postnummer</span>
-                        <input type="number" name="Postnummer" id="Postnummer" placeholder="1725*" min="0001" max="9991" required>
+                        <input type="number" name="Postnummer" placeholder="1725*" min="0001" max="9991" required>
                     </label>
-                    <label>
+                    <label id="poststed">
                         <span>Poststed</span>
-                        <input type="text" name="Poststed" id="Poststed" placeholder="Halden*" required>
+                        <input type="text" name="Poststed" placeholder="Halden*" required>
                     </label>
                 </form>
-                <form method="post">
+                <form method="post" id="contact-flex">
                     <h4>Kontaktinformasjon</h4>
                     <label>
                         <span>E-post</span>
-                        <input type="email" name="email" placeholder="nora-nordmann@hiof.no*" pattern="[a-z0-9._%+\-]+@hiof.no" required>
-                        <span>Telefon</span>
+                        <input type="email" name="email" placeholder="nora-nordmann@hiof.no*" pattern="[a-z0-9._%+\-]+@hiof.no" required>  
                     </label>
                     <label>
+                         <span>Telefon</span>
                         <input type="tel" name="Telefon" id="Telefon" placeholder="+47*****123" required>
                     </label>
                 </form>
@@ -182,69 +182,81 @@
             </section>
             <section id="delivery">
                 <h2>3.levering</h2>
-                <section>
+                <section id="delivery-flex">
                     <h3>leveringsvalg</h3>
-                    <form method="post">
                         <section id="delivery-option1">
-                            <label>
-                                <input type="radio" name="valg" value="ekspress-hjemlevering">
-                                Ekspress hjemlevering
-                            </label>
-                            <i class="fa-solid fa-truck-fast">59kr</i>
-                            <p>3-4 virkedager</p>
+                            <form>
+                                <label>
+                                    <input type="radio" name="valg" value="ekspress-hjemlevering">
+                                    Ekspress hjemlevering
+                                </label>
+                                <span>
+                                59kr
+                                <i class="fa-solid fa-truck-fast"></i>
+                                </span>
+                            </form>
+                            <p class="days">3-4 virkedager</p>
                             <p>Bestill hver dag før 08.00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag.
                                 *for levering til postnummer 4000-799 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
                             </p>
                         </section>
-                    
                         <section id="delivery-option2">
+                            <form>
                             <label>
                                 <input type="radio" name="valg" value="ekspress-pakke-utleveringssted">
                                 Ekspress pakke utleveringssted
                             </label>
-                            <i class="fa-brands fa-dhl">59kr</i>
-                            <p>1-3 virkedager</p>
+                            <span>
+                                59kr
+                                <i class="fa-brands fa-dhl"></i>
+                            </span>
+                            </form>
+                            <p class="days">1-3 virkedager</p>
                         </section>
-                    
                         <section id="delivery-option3">
+                            <form>
                             <label>
                                 <input type="radio" name="valg" value="standard-hjemmelevering">
                                 Standard hjemmelevering
                             </label>
-                            <i class="fa-solid fa-box">gratis</i>
-                            <p>5-8 virkedager</p>
+                            <span>
+                            Gratis
+                            <i class="fa-solid fa-box"></i>
+                            </span>
+                            </form>
+                            <p class="days">5-8 virkedager</p>
                             <p>Leveres hjem til deg før frokost mandag-lørdag innen 4-7 hverdager.</p>
                         </section>
-                    </form>
-                    
                 </section>
             </section>
             <section id="payment">
                 <h2>4.betaling</h2>
-                <section>
+                <section id="payment-flex">
                     <h3>betale med kort</h3>
-                    <form method="post">
-                        <label>
+                    <form id="payment-grid">
+                        <label id="cardnumber">
                         <span>Kortnummer</span>
-                        <input type="number" name="kardnumber" id="kardnumber" min="10000000" placeholder="1234 *** 56789" max="900000000" required>
+                        <input type="number" name="cardnumber"  min="10000000" placeholder="1234 *** 56789" max="900000000" required>
                         </label>
-                        <label>
+                        <label id="expiration">
                             <span>Utløpsdato</span>
-                            <input type="date" name="expiration date" id="expiration" required>
+                            <input type="date" name="expiration date" required>
                         </label>
-                        <label>
-                            <input type="number" name="CVC/CVV" id="CVC" placeholder="CVC/CVV" required>
+                        <label id="CVC">
+                            <span>CVC/CVV</span>
+                            <input type="number" name="CVC/CVV" placeholder="CVC/CVV" required>
                         </label>
                     </form>
+                    <section id="payment-check">
                     <p>Å betale inkl. mva</p>
                     <h3>1 119kr</h3>
                         <form method="post">
-                            <label>
+                            <label id="submit">
                                 <input type="submit" value="Fullfør kjøp">
                             </label>
                         </form>
                     <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren foreholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger</p>
-                    <form method="post">
+                    <form method="post" id="checkmark">
                         <label>
                             <input type="checkbox">
                             <span>Ja takk! Send nyhetsbrev til meg</span>
@@ -254,6 +266,7 @@
                             <span>Jeg ønsker å motta tekstmeldiger med tilbud og nyheter</span>
                         </label>
                     </form>
+                    </section>
                 </section>
             </section>
         </main>
