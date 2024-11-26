@@ -183,12 +183,7 @@ body{
                 align-items: center;
                 padding:0;
 
-                li:hover{
-                    background-color: #646464;
-                    a{
-                    color: #ffff;
-                    }
-                }
+                
 
                li{
                 border-radius: 30px;
@@ -200,8 +195,26 @@ body{
                 align-items: center;
                 border-style: solid;
                 border-width: 0.5px;
-
                }
+               #new-product{
+                background-color: #252525;
+                a{
+                    color: #ffffff;
+                }
+               }
+               #new-product:hover{
+                    background-color: #646464;
+                    a{
+                        color: #ffff;
+                    }
+               }
+                li:hover{
+                    background-color: #646464;
+                    a{
+                        color: #ffff;
+                    }
+                }
+
             }
         }
     }
@@ -463,6 +476,7 @@ a{
         }
     }
 }
+
 /* produkt*/
 
 #breadcrumb{
@@ -525,6 +539,9 @@ a{
         display: flex;
         flex-direction: column;
         max-height: 850px;
+        form select:hover{
+            border-width: 2px;
+        }
         form{
             margin-bottom: 1rem;
         }
@@ -542,6 +559,9 @@ a{
         align-items: center;
         border: 1px solid #000; 
         height: 50px;
+        i:hover{
+            color: #f00f0f;
+        }
         i{
             font-size: 20px;
         }
@@ -553,15 +573,16 @@ a{
         gap: 1rem;
         height: 800px;
 
-     
-
+    
         .flex-space{
+            border-top: solid 1px;
+        } 
+        summary{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            border-top: solid 1px;
-        } 
+        }
         
     }
     #add-to-chart{
@@ -579,6 +600,14 @@ a{
             color: #fff;
             border: none;
         }
+        input:hover{
+            background-color: #5a5a5a;
+        }
+    }
+}
+details{
+    ::marker{
+        content: none;
     }
 }
 
@@ -589,8 +618,26 @@ a{
             height: 50px;
             padding: 10px; 
             font-size: 16px; 
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000;
         }
     } 
+
+thead{
+    text-transform: uppercase;
+}
+
+#singel-review{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    border-color: #909090;
+    min-width: 100% ;
+    h4,span,p{
+        margin: 1rem;
+    }
+}
 
 #flex-aside{
     display: flex;
@@ -812,4 +859,9 @@ a{
         width: 100%; 
         min-height: 300px; 
     }
+}
+/* for desktop */
+
+@media only screen and (min-width:800px) {
+    
 }
