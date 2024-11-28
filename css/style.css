@@ -606,7 +606,6 @@ thead{
     font-weight: bold;
     text-transform: capitalize;
 }
-/* for ipad og opp */
 #payment-flex{
     display: flex;
     flex-direction: column;
@@ -648,6 +647,18 @@ thead{
         padding-bottom: 4rem;
     }
 }
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #6c6c6c68;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 
 /* for mobile */
 @media only screen and (max-width:500px){
@@ -1202,6 +1213,7 @@ thead{
         display: flex;
         flex-direction: column;
         max-width: 440px;
+        overflow-x: scroll;
     }
     #flex-aside{
         grid-row: 3/4;

@@ -24,7 +24,7 @@
                     <li class="hover"> <a href="product.html">Produkter</a></li>
                     <li>
                      <span class="logo">
-                        <a href="index.html">Logo</a>
+                        <a href="index.html" itemprop="logo">Logo</a>
                      </span>
                     </li>
                     <li class="hover"><a href="#category">Kategorier</a></li>
@@ -37,7 +37,7 @@
                 </ul>
             </nav>
         </header>
-        <main id="main-index">
+        <main id="main-index" itemscope itemtype="https://schema.org/OnlineStore">
             <section id="banner-arrow-icon">
                 <span id="arrows">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -73,7 +73,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div id="product-card">
+                <div id="product-card" itemscope itemtype="https://schema.org/Product">
                     <article>
                         <figure>
                             <img src="https://picsum.photos/200/300" alt="poplulære produkter">
@@ -208,7 +208,7 @@
             <section id="reports">
                 <h2>Anmeldlser</h2>
                 <div>
-                    <article class="anmeldlser">
+                    <article class="anmeldlser" itemtype="https://schema.org/review"> 
                        <img src="bilder/reports.jpg" alt="bruker1">
                     <h3>Monkey d Luffy</h3> 
                     <span class="fa fa-star"></span>
@@ -297,6 +297,7 @@
                             <li><a href="product.html"> Produkter</a></li>
                             <li><a href="#category">Kategorier</a></li>
                             <li><a href="#contact">Kontakt oss</a></li>
+                            <li><a href="Mal – WCAG-sjekkliste for utfylling av tilgjengelighetserklæring for nettløsning 24.01.2024.pdf">WCG-skjekkliste</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -311,6 +312,11 @@
                 </section>
             </div>
         </footer>
+        <span>
+            <a href="#top" class="back-to-top">Back to topp
+            <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </span>
     </div>
 </body>
 </html>
