@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Eksamen | Products</title>
 </head>
-<body>
+<body itemscope itemscope itemtype="https://schema.org/OnlineStore">
     <a href="#main-content" class="skip-to-content">Skip to content</a>
     <div id="div_container">
         <header class="global_header">
@@ -41,31 +41,31 @@
         <main id="product-main">
             <header>
                 <nav>
-                    <ul id="breadcrumb">
-                        <li><a href="index.html">Hjem</a></li>
+                    <ul id="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="URL"><a href="index.html">Hjem</a></li>
                         <li><i class="fa-solid fa-chevron-right"></i></li>
-                        <li><a href="#">Kategori</a></li>
+                        <li itemprop="URL"><a href="#">Kategori</a></li>
                         <li><i class="fa-solid fa-chevron-right"></i></li>
                         <li id="bold" itemprop="name"><a href="product.html">Produktnavn</a></li>
                     </ul>
                 </nav>
             </header>
             <section id="product-view" itemscope itemtype="https://schema.org/Product">
-                    <img id="main-product" src="bilder/shoes.jpg" alt="Hvite høyheler">
+                    <img id="main-product" src="bilder/shoes.jpg" alt="Hvite høyheler" itemprop="image">
                     <div id="side-product">
-                        <img src="bilder/shoes.jpg" alt="Hvite høyheler">
-                        <img src="bilder/shoes.jpg" alt="Hvite høyheler">
-                        <img src="bilder/shoes.jpg" alt="Hvite høyheler">
+                        <img src="bilder/shoes.jpg" alt="Hvite høyheler" itemprop="image">
+                        <img src="bilder/shoes.jpg" alt="Hvite høyheler" itemprop="image">
+                        <img src="bilder/shoes.jpg" alt="Hvite høyheler" itemprop="image">
                     </div>
             </section>
-            <section id="product-choose">
+            <section id="product-choose" itemscope itemtype="https://schema.org/Product">
                 <h1>Produktnavn</h1>
-                <a href="#">Merkekavn</a>
-                <h4>5 195kr inkl. mva</h4>
-                <h4 id="font-weight"><span class="bold">Farge:</span> hvit</h4>
+                <a href="#" itemprop="name">Merkekavn</a>
+                <h4 itemprop="description">5 195kr inkl. mva</h4>
+                <h4 itemprop="description" id="font-weight"><span class="bold">Farge:</span> hvit</h4>
                 <form id="choose-size">
                     <label for="sizes"></label>
-                    <select id="sizes" name="size">
+                    <select id="sizes" name="size" itemprop="size">
                         <option>Velg en størrelse</option>
                         <option value="Exstra small">XS</option>
                         <option value="Small">S</option>
@@ -82,7 +82,7 @@
                 </form>
                 <div id="flex-product">
                 <section class="flex-space">
-                    <details>
+                    <details itemprop="description">
                         <summary> 
                             <h3>Materiale og vedlinkenhold</h3>
                             <i class="fa-solid fa-plus"></i>
@@ -95,7 +95,7 @@
                     </details>
                 </section>
                 <section class="flex-space">
-                    <details>
+                    <details itemprop="description">
                         <summary>
                             <h3>Produktdetaljer</h3>
                             <i class="fa-solid fa-plus"></i>
@@ -104,7 +104,7 @@
                     </details>
                 </section>
                 <section class="flex-space">
-                    <details>
+                    <details itemprop="description">
                         <summary>
                             <h3>Størrelsestabell</h3>
                             <i class="fa-solid fa-plus"></i>
@@ -224,7 +224,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star"></i>
-                         </span>                           
+                         </span itemprop="reviewBody">                           
                         <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime </p>
                      </article>
                     </details>
@@ -246,7 +246,7 @@
                     </picture>
                     <section class="pricetag">
                         <a href="product.html"><h4>Product name</h4></a>
-                        <p>kr 1999</p>
+                        <p itemprop="price">kr 1999</p>
                     </section>
                     <span class="reviews-stars">
                     <i class="fa-solid fa-star"></i>
@@ -263,7 +263,7 @@
                     </picture>
                       <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                         </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>
@@ -280,7 +280,7 @@
                     </picture>
                       <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                         </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>
@@ -297,7 +297,7 @@
                     </picture>
                       <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                         </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>
@@ -314,7 +314,7 @@
                     </picture>
                       <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                         </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>
@@ -331,7 +331,7 @@
                     </picture>
                       <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                         </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>
@@ -348,7 +348,7 @@
                     </picture>
                     <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                     </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>
@@ -365,7 +365,7 @@
                     </picture>
                     <section class="pricetag">
                             <a href="product.html"><h4>Product name</h4></a>
-                            <p>kr 1999</p>
+                            <p itemprop="price">kr 1999</p>
                     </section>
                     <span class="reviews-stars" itemprop="ratingValue">
                         <i class="fa-solid fa-star"></i>

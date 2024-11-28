@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Eksamen | Checkout</title>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/OnlineStore">
     <a href="#main-content" class="skip-to-content">Skip to content</a>
     <div id="div_container">
         <header class="global_header">
@@ -48,9 +48,9 @@
             <h1>Kasse</h1>
             <section id="shopping-bag">
                 <h2>1.shoppingbagen din</h2>
-                <article class="checkout-product">
+                <article class="checkout-product" itemscope itemtype="https://schema.org/Product">
                     <figure>
-                    <img src="bilder/shoes.jpg" alt="hvite høyheler">
+                    <img src="bilder/shoes.jpg" alt="hvite høyheler" itemprop="image">
                     </figure>
                     <section>
                     <a href="product.html">
@@ -77,9 +77,9 @@
                         <i class="fa-solid fa-trash"></i>
                     </span>
                 </article>
-                <article class="checkout-product">
+                <article class="checkout-product" itemscope itemtype="https://schema.org/Product">
                     <figure>
-                    <img src="bilder/shoes.jpg" alt="hvite høyheler">
+                    <img src="bilder/shoes.jpg" alt="hvite høyheler" itemprop="image">
                     </figure>
                     <section>
                     <a href="product.html">
@@ -107,9 +107,9 @@
                         <i class="fa-solid fa-trash"></i>
                     </span>
                 </article>
-                <article class="checkout-product">
+                <article class="checkout-product" itemscope itemtype="https://schema.org/Product">
                     <figure>
-                    <img src="bilder/shoes.jpg" alt="hvite høyheler">
+                    <img src="bilder/shoes.jpg" alt="hvite høyheler" itemprop="image">
                     </figure>
                     <section>
                     <a href="product.html">
@@ -144,7 +144,7 @@
                     <h4>Leveringsadresse</h4>
                     <label id="fornavn">
                         <span>Fornavn</span>
-                        <input type="text" name="fornavn" placeholder="Nora*" max="15" min="2" required>
+                        <input type="text" name="fornavn" placeholder="Nora*" maxlength="15" required>
                     </label>
                     <label id="etternavn">
                         <span>Etternavn</span>
@@ -305,7 +305,7 @@
                             <li><a href="product.html"> Produkter</a></li>
                             <li><a href="#category">Kategorier</a></li>
                             <li><a href="#contact">Kontakt oss</a></li>
-                            <li><a href="Mal – WCAG-sjekkliste for utfylling av tilgjengelighetserklæring for nettløsning 24.01.2024.pdf">WCG-skjekkliste</a></li>
+                            <li><a href="tilgjengelighetserklering.pdf">WCG-skjekkliste</a></li>
                         </ul>
                     </nav>
                 </section>
