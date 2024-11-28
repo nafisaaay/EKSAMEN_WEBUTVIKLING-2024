@@ -171,6 +171,10 @@ body{
     flex-wrap: wrap;
     gap: 1rem;
     padding-bottom: 2rem;
+    justify-content: center;
+    article{
+        max-width: 350px;
+    }
 
     figure{
         position: relative;
@@ -1166,6 +1170,8 @@ thead{
         grid-template-rows: repeat(4,auto);
         gap: 1rem;
         padding-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     #category header{
         grid-row: 1/2;
